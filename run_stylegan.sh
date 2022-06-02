@@ -20,6 +20,6 @@ case $1 in
         cd stylegan2-ada-pytorch
         python style_mixing.py --outdir=out --rows=85,100,75,458,1500 --cols=55,821,1789,293 \
              --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metfaces.pkl;;
-    ?)
+    *)
         echo "unkown argument";;
 esac
