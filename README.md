@@ -19,3 +19,5 @@ Generate mixing example
 ```
 sh run_stylegan.sh mixing
 ```
+
+Images are generated at ```stylegan2-ada-pytorch/out/```
