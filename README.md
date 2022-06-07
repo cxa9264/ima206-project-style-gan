@@ -24,7 +24,7 @@ Images are generated at ```stylegan2-ada-pytorch/out/```
 
 ## InterFace Gan
 
-
+Well.... it use the tf version StyleGan based on tf 1.10.0.....
 
 1. Download StyleGan parameters and put in ```interfacegan/models/pretrain/```
 ```https://drive.google.com/uc?id=1MGqJl28pN4t7SAtSrPdSRJSQJqahkzUf```
