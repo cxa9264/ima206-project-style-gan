@@ -30,6 +30,7 @@ Well.... it use the tf version StyleGan based on tf 1.10.0.....
 ```https://drive.google.com/uc?id=1MGqJl28pN4t7SAtSrPdSRJSQJqahkzUf```
 
 2. 
+NOT FINISH YET!
 ```
 sh run_interfacegan 10000
 ```
