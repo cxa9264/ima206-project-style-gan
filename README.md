@@ -21,3 +21,15 @@ sh run_stylegan.sh mixing
 ```
 
 Images are generated at ```stylegan2-ada-pytorch/out/```
+
+## InterFace Gan
+
+
+
+1. Download StyleGan parameters and put in ```interfacegan/models/pretrain/```
+```https://drive.google.com/uc?id=1MGqJl28pN4t7SAtSrPdSRJSQJqahkzUf```
+
+2. 
+```
+sh run_interfacegan 10000
+```
