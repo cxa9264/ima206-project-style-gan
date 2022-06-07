@@ -34,3 +34,15 @@ NOT FINISH YET!
 ```
 sh run_interfacegan 10000
 ```
+
+### TODO
+- [ ] upload generated images
+- [ ] find a predictor to annotate generated images
+
+### Inprogress
+- [ ] generate images
+
+### Done
+...
+
+
