@@ -34,7 +34,7 @@ def inference(model, device, target, img_root) -> dict:
     model.eval()
 
     predict_scores = {}
-    for img_name in tqdm(os.listdir(img_root)[:10]):
+    for img_name in tqdm(os.listdir(img_root)):
         img = cv2.imread(os.path.join(img_root, img_name))
 
         if img is None:
@@ -67,6 +67,8 @@ if __name__ == '__main__':
         device = torch.device('cuda:0')
     elif platform == 'darwin':
         device = torch.device('mps')
+    else:
+        device = torch.device('cpu')
     
     model = model.to(device)
 
