@@ -50,12 +50,11 @@ sh run_predictor.sh
 
 ### TODO
 - [ ] upload generated images
-- [ ] find a predictor to annotate generated images
 
 ### Inprogress
 - [ ] generate images
 
 ### Done
-...
+- [x] find a predictor to annotate generated images
 
 
