@@ -38,6 +38,12 @@ sh run_interfacegan 10000
 ## CNN Classifier
 **References:**
 - https://github.com/Hawaii0821/FaceAttr-Analysis
+
+Prediction of face attributes:
+```
+sh run_predictor.sh
+```
+
 - https://github.com/rgkannan676/Recognition-and-Classification-of-Facial-Attributes
 - https://www.kaggle.com/datasets/jessicali9530/celeba-dataset/discussion/78775
 
