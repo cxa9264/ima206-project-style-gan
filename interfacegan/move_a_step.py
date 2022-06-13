@@ -22,6 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--boundary', dest='boundary_path', type=str, required=True)
     parser.add_argument('--latent_space_type', dest='latent_space_type', type=str, default='z')
     parser.add_argument('--max_delta', dest='max_delta', type=int, default=5)
+    parser.add_argument('--num_steps', dest='num_steps', type=int, default=10)
     parser.add_argument('--generate_style', action='store_true',
                             help='If specified, will generate layer-wise style codes '
                            'in Style GAN. (default: do not generate styles)')
@@ -32,7 +33,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     boundary = np.load(args.boundary_path)
-    
+    boundary /= np.linalg.norm(boundary)
 
     logger = setup_logger(args.save_path, logger_name='generate_data')
 
@@ -44,7 +45,7 @@ if __name__ == '__main__':
     # generate latent codes
     logger.info('Preparing latent codes...')
     initial_code = model.easy_sample(1, **kwargs)
-    step = np.arange(1, args.max_delta)
+    step = np.linspace(0, args.max_delta, args.num_steps)[1:]
     step = np.concatenate([step, -step, [0]])
     step.sort()
     latent_codes = initial_code + step.reshape(-1, 1) * boundary
