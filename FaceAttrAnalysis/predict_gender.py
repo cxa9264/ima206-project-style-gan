@@ -14,6 +14,7 @@ import numpy as np
 import cv2
 from tqdm import tqdm
 import matplotlib.pyplot as plt
+import matplotlib.colors as colors
 
 import config as cfg
 from FaceAttr_baseline_model import FaceAttrModel
@@ -61,8 +62,12 @@ if __name__ == '__main__':
     parser.add_argument('--target', dest='target', nargs='+', type=int, default=20)
     parser.add_argument('--save_path', dest='save_path', type=str, default='./result')
     parser.add_argument('--save_plot', action='store_true')
+    parser.add_argument('--move_target', type=int)
     
     args = parser.parse_args()
+
+    if args.target == [-1]:
+        args.target = [i for i in range(40)]
     
     model = FaceAttrModel('Resnet18', pretrained=False, selected_attrs=cfg.selected_attrs)
 
@@ -92,6 +97,8 @@ if __name__ == '__main__':
             f.write(line + '\n')
 
     if args.save_plot:
+        plt.figure(dpi=300, figsize=(20, 10))
+
         deltas = []
 
         scores_plt = {s: [] for s in args.target}
@@ -103,10 +110,14 @@ if __name__ == '__main__':
         legends = []
         idx = np.argsort(deltas)
         deltas = np.array(deltas)[idx]
-        for key, val in scores_plt.items(): 
+        for i, (key, val)in enumerate(scores_plt.items()): 
             legends.append(cfg.selected_attrs[key])
-            plt.plot(deltas, np.array(val)[idx], 'x-')
+            style = 'x-' if key != args.move_target else 'o-'
+            plt.plot(deltas, np.array(val)[idx], style, 
+                color=colors.hsv_to_rgb((i / len(args.target), 0.5, 0.8)), 
+                linewidth=1.5+(key==args.move_target))
         
-        plt.legend(legends)
+        plt.legend(legends, loc='center left', bbox_to_anchor=(1, 0.5))
+        plt.title(f"Move {cfg.selected_attrs[args.move_target]}")
 
         plt.savefig(os.path.join(args.save_path, 'scores.png'))

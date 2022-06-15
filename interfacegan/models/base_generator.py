@@ -229,7 +229,7 @@ class BaseGenerator(object):
   def easy_synthesize(self, latent_codes, **kwargs):
     """Wraps functions `synthesize()` and `postprocess()` together."""
     outputs = self.synthesize(latent_codes, **kwargs)
-    if 'image' in outputs:
+    if 'image' in outputs:  
       outputs['image'] = self.postprocess(outputs['image'])
 
     return outputs

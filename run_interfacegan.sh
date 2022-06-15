@@ -1,13 +1,15 @@
 #!/bin/bash
 
-NUM=$1
+INPUT_CODE="/home/litianyu/ima206-project-style-gan/interfacegan/data/stylegan_celebahq_data/z.npy"
+INPUT_SCORE="/home/litianyu/ima206-project-style-gan/svm_data/"$1".npy"
+OUTPUT="boundaries"
+ATTRIBUTE_NAME=$2
 
+echo "Training boundary..."
 cd interfacegan
-echo "Generating data..."
-python generate_data.py -m stylegan_celebahq -o data/stylegan_celebahq -n "$NUM"
 
-echo "Data generated"
 python train_boundary.py \
-    -o boundaries/stylegan_celebahq_"$ATTRIBUTE_NAME" \
-    -c data/stylegan_celebahq/z.npy \
-    -s data/stylegan_celebahq/"$ATTRIBUTE_NAME"_scores.npy
+    -o "$OUTPUT"/stylegan_celebahq_"$ATTRIBUTE_NAME" \
+    -c "$INPUT_CODE" \
+    -s "$INPUT_SCORE" \
+    -n 0.2

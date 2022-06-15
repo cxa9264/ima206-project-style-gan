@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 [2022-06-14 01:14:13,624][INFO] Loading pytorch model from `models/pretrain/stylegan_celebahq.pth`.
 [2022-06-14 01:14:13,775][INFO] Successfully loaded!
 [2022-06-14 01:14:13,775][INFO]   `lod` of the loaded model is 0.0.
 [2022-06-14 01:14:17,387][INFO] Preparing latent codes...
 [2022-06-14 01:14:17,388][INFO] Generating images...
+=======
+[2022-06-16 03:14:18,709][INFO] Loading pytorch model from `models/pretrain/stylegan_celebahq.pth`.
+[2022-06-16 03:14:18,853][INFO] Successfully loaded!
+[2022-06-16 03:14:18,854][INFO]   `lod` of the loaded model is 0.0.
+[2022-06-16 03:14:22,963][INFO] Preparing latent codes...
+[2022-06-16 03:14:22,965][INFO] Generating images...
+>>>>>>> tianyu

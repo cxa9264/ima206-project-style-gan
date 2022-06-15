@@ -21,7 +21,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_path', dest='save_path', type=str, required=True)
     parser.add_argument('--boundary', dest='boundary_path', type=str, required=True)
     parser.add_argument('--latent_space_type', dest='latent_space_type', type=str, default='z')
-    parser.add_argument('--max_delta', dest='max_delta', type=int, default=5)
+    parser.add_argument('--max_delta', dest='max_delta', type=int, default=2)
     parser.add_argument('--num_steps', dest='num_steps', type=int, default=10)
     parser.add_argument('--generate_style', action='store_true',
                             help='If specified, will generate layer-wise style codes '
@@ -29,11 +29,13 @@ if __name__ == '__main__':
     parser.add_argument('-I', '--generate_image', action='store_false',
                             help='If specified, will skip generating images in '
                            'Style GAN. (default: generate images)')
+    parser.add_argument('--intercept', dest='intercept_path', type=str, default=None)
 
     args = parser.parse_args()
 
     boundary = np.load(args.boundary_path)
-    boundary /= np.linalg.norm(boundary)
+    if args.intercept_path is not None:
+        intercept = np.load(args.intercept_path)
 
     logger = setup_logger(args.save_path, logger_name='generate_data')
 
@@ -45,6 +47,8 @@ if __name__ == '__main__':
     # generate latent codes
     logger.info('Preparing latent codes...')
     initial_code = model.easy_sample(1, **kwargs)
+    print(intercept)
+    initial_code = initial_code - (initial_code @ boundary.T) * boundary + intercept[0, 0]
     step = np.linspace(0, args.max_delta, args.num_steps)[1:]
     step = np.concatenate([step, -step, [0]])
     step.sort()
