@@ -27,7 +27,7 @@ def parse_args():
                       help='Path to the input latent codes. (required)')
   parser.add_argument('-s', '--scores_path', type=str, required=True,
                       help='Path to the input attribute scores. (required)')
-  parser.add_argument('-n', '--chosen_num_or_ratio', type=float, default=0.02,
+  parser.add_argument('-n', '--chosen_num_or_ratio', type=float, default=0.5,
                       help='How many samples to choose for training. '
                            '(default: 0.2)')
   parser.add_argument('-r', '--split_ratio', type=float, default=0.7,
@@ -55,13 +55,14 @@ def main():
     raise ValueError(f'Attribute scores `{args.scores_path}` does not exist!')
   scores = np.load(args.scores_path)
 
-  boundary = train_boundary(latent_codes=latent_codes,
+  boundary, intercept = train_boundary(latent_codes=latent_codes,
                             scores=scores,
                             chosen_num_or_ratio=args.chosen_num_or_ratio,
                             split_ratio=args.split_ratio,
                             invalid_value=args.invalid_value,
                             logger=logger)
   np.save(os.path.join(args.output_dir, 'boundary.npy'), boundary)
+  np.save(os.path.join(args.output_dir, 'intercept.npy'), intercept)
 
 
 if __name__ == '__main__':
