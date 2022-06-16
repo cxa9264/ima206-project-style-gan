@@ -47,7 +47,6 @@ if __name__ == '__main__':
     # generate latent codes
     logger.info('Preparing latent codes...')
     initial_code = model.easy_sample(1, **kwargs)
-    print(intercept)
     initial_code = initial_code - (initial_code @ boundary.T) * boundary + intercept[0, 0]
     step = np.linspace(0, args.max_delta, args.num_steps)[1:]
     step = np.concatenate([step, -step, [0]])
