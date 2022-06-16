@@ -1,0 +1,560 @@
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 0 0               
+Training boundary...
+[2022-06-16 16:11:54,562][INFO] Loading latent codes.
+[2022-06-16 16:11:54,687][INFO] Loading attribute scores.
+[2022-06-16 16:11:54,688][INFO] Filtering training data.
+[2022-06-16 16:11:54,688][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:11:54,825][INFO] Spliting training and validation sets:
+[2022-06-16 16:11:54,834][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:11:54,836][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:11:54,837][INFO]   Remaining: 10133 positive, 85867 negative.
+[2022-06-16 16:11:54,837][INFO] Training boundary.
+[2022-06-16 16:11:55,590][INFO] Finish training.
+[2022-06-16 16:11:55,615][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:11:57,205][INFO] Accuracy for remaining set: 58542 / 96000 = 0.609812
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 1 1
+Training boundary...
+[2022-06-16 16:12:07,358][INFO] Loading latent codes.
+[2022-06-16 16:12:07,468][INFO] Loading attribute scores.
+[2022-06-16 16:12:07,489][INFO] Filtering training data.
+[2022-06-16 16:12:07,490][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:12:07,627][INFO] Spliting training and validation sets:
+[2022-06-16 16:12:07,636][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:12:07,638][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:12:07,639][INFO]   Remaining: 37580 positive, 58420 negative.
+[2022-06-16 16:12:07,639][INFO] Training boundary.
+[2022-06-16 16:12:08,473][INFO] Finish training.
+[2022-06-16 16:12:08,504][INFO] Accuracy for validation set: 1189 / 1200 = 0.990833
+[2022-06-16 16:12:10,490][INFO] Accuracy for remaining set: 68184 / 96000 = 0.710250
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 2 2               
+Training boundary...
+[2022-06-16 16:12:36,334][INFO] Loading latent codes.
+[2022-06-16 16:12:36,445][INFO] Loading attribute scores.
+[2022-06-16 16:12:36,457][INFO] Filtering training data.
+[2022-06-16 16:12:36,457][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:12:36,591][INFO] Spliting training and validation sets:
+[2022-06-16 16:12:36,600][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:12:36,602][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:12:36,603][INFO]   Remaining: 58093 positive, 37907 negative.
+[2022-06-16 16:12:36,603][INFO] Training boundary.
+[2022-06-16 16:12:37,331][INFO] Finish training.
+[2022-06-16 16:12:37,351][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:12:38,461][INFO] Accuracy for remaining set: 82349 / 96000 = 0.857802
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 3 3
+Training boundary...
+[2022-06-16 16:12:43,532][INFO] Loading latent codes.
+[2022-06-16 16:12:43,644][INFO] Loading attribute scores.
+[2022-06-16 16:12:43,656][INFO] Filtering training data.
+[2022-06-16 16:12:43,656][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:12:43,792][INFO] Spliting training and validation sets:
+[2022-06-16 16:12:43,802][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:12:43,803][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:12:43,804][INFO]   Remaining: 24686 positive, 71314 negative.
+[2022-06-16 16:12:43,805][INFO] Training boundary.
+[2022-06-16 16:12:44,552][INFO] Finish training.
+[2022-06-16 16:12:44,575][INFO] Accuracy for validation set: 1195 / 1200 = 0.995833
+[2022-06-16 16:12:45,965][INFO] Accuracy for remaining set: 64058 / 96000 = 0.667271
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 4 4
+Training boundary...
+[2022-06-16 16:12:51,507][INFO] Loading latent codes.
+[2022-06-16 16:12:51,616][INFO] Loading attribute scores.
+[2022-06-16 16:12:51,640][INFO] Filtering training data.
+[2022-06-16 16:12:51,640][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:12:51,780][INFO] Spliting training and validation sets:
+[2022-06-16 16:12:51,789][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:12:51,791][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:12:51,792][INFO]   Remaining: 0 positive, 96000 negative.
+[2022-06-16 16:12:51,792][INFO] Training boundary.
+[2022-06-16 16:12:52,536][INFO] Finish training.
+[2022-06-16 16:12:52,558][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:12:53,763][INFO] Accuracy for remaining set: 54582 / 96000 = 0.568562
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 5 5
+Training boundary...
+[2022-06-16 16:12:58,611][INFO] Loading latent codes.
+[2022-06-16 16:12:58,721][INFO] Loading attribute scores.
+[2022-06-16 16:12:58,740][INFO] Filtering training data.
+[2022-06-16 16:12:58,740][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:12:58,878][INFO] Spliting training and validation sets:
+[2022-06-16 16:12:58,887][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:12:58,889][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:12:58,890][INFO]   Remaining: 15699 positive, 80301 negative.
+[2022-06-16 16:12:58,890][INFO] Training boundary.
+[2022-06-16 16:12:59,725][INFO] Finish training.
+[2022-06-16 16:12:59,757][INFO] Accuracy for validation set: 1195 / 1200 = 0.995833
+[2022-06-16 16:13:01,638][INFO] Accuracy for remaining set: 79185 / 96000 = 0.824844
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 6 6
+Training boundary...
+[2022-06-16 16:13:19,782][INFO] Loading latent codes.
+[2022-06-16 16:13:19,893][INFO] Loading attribute scores.
+[2022-06-16 16:13:19,905][INFO] Filtering training data.
+[2022-06-16 16:13:19,906][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:13:20,041][INFO] Spliting training and validation sets:
+[2022-06-16 16:13:20,049][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:13:20,051][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:13:20,052][INFO]   Remaining: 4271 positive, 91729 negative.
+[2022-06-16 16:13:20,052][INFO] Training boundary.
+[2022-06-16 16:13:20,822][INFO] Finish training.
+[2022-06-16 16:13:20,850][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:13:22,476][INFO] Accuracy for remaining set: 68182 / 96000 = 0.710229
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 7 7
+Training boundary...
+[2022-06-16 16:13:27,556][INFO] Loading latent codes.
+[2022-06-16 16:13:27,666][INFO] Loading attribute scores.
+[2022-06-16 16:13:27,690][INFO] Filtering training data.
+[2022-06-16 16:13:27,690][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:13:27,827][INFO] Spliting training and validation sets:
+[2022-06-16 16:13:27,836][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:13:27,838][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:13:27,839][INFO]   Remaining: 35379 positive, 60621 negative.
+[2022-06-16 16:13:27,839][INFO] Training boundary.
+[2022-06-16 16:13:28,605][INFO] Finish training.
+[2022-06-16 16:13:28,624][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:13:29,649][INFO] Accuracy for remaining set: 75052 / 96000 = 0.781792
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 8 8
+Training boundary...
+[2022-06-16 16:13:34,240][INFO] Loading latent codes.
+[2022-06-16 16:13:34,356][INFO] Loading attribute scores.
+[2022-06-16 16:13:34,385][INFO] Filtering training data.
+[2022-06-16 16:13:34,385][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:13:34,520][INFO] Spliting training and validation sets:
+[2022-06-16 16:13:34,529][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:13:34,531][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:13:34,532][INFO]   Remaining: 14434 positive, 81566 negative.
+[2022-06-16 16:13:34,532][INFO] Training boundary.
+[2022-06-16 16:13:35,230][INFO] Finish training.
+[2022-06-16 16:13:35,244][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:13:36,175][INFO] Accuracy for remaining set: 45715 / 96000 = 0.476198
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 9 9
+Training boundary...
+[2022-06-16 16:13:42,540][INFO] Loading latent codes.
+[2022-06-16 16:13:42,657][INFO] Loading attribute scores.
+[2022-06-16 16:13:42,685][INFO] Filtering training data.
+[2022-06-16 16:13:42,685][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:13:42,822][INFO] Spliting training and validation sets:
+[2022-06-16 16:13:42,831][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:13:42,832][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:13:42,834][INFO]   Remaining: 14476 positive, 81524 negative.
+[2022-06-16 16:13:42,834][INFO] Training boundary.
+[2022-06-16 16:13:43,542][INFO] Finish training.
+[2022-06-16 16:13:43,557][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:13:44,460][INFO] Accuracy for remaining set: 78800 / 96000 = 0.820833
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 10 10
+Training boundary...
+[2022-06-16 16:13:50,685][INFO] Loading latent codes.
+[2022-06-16 16:13:50,799][INFO] Loading attribute scores.
+[2022-06-16 16:13:50,810][INFO] Filtering training data.
+[2022-06-16 16:13:50,810][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:13:50,946][INFO] Spliting training and validation sets:
+[2022-06-16 16:13:50,954][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:13:50,956][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:13:50,957][INFO]   Remaining: 0 positive, 96000 negative.
+[2022-06-16 16:13:50,957][INFO] Training boundary.
+[2022-06-16 16:13:51,745][INFO] Finish training.
+[2022-06-16 16:13:51,775][INFO] Accuracy for validation set: 1196 / 1200 = 0.996667
+[2022-06-16 16:13:53,591][INFO] Accuracy for remaining set: 38473 / 96000 = 0.400760
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 11 11
+Training boundary...
+[2022-06-16 16:14:01,483][INFO] Loading latent codes.
+[2022-06-16 16:14:01,594][INFO] Loading attribute scores.
+[2022-06-16 16:14:01,606][INFO] Filtering training data.
+[2022-06-16 16:14:01,606][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:01,741][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:01,750][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:01,752][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:01,753][INFO]   Remaining: 24306 positive, 71694 negative.
+[2022-06-16 16:14:01,753][INFO] Training boundary.
+[2022-06-16 16:14:02,678][INFO] Finish training.
+[2022-06-16 16:14:02,717][INFO] Accuracy for validation set: 1188 / 1200 = 0.990000
+[2022-06-16 16:14:05,293][INFO] Accuracy for remaining set: 70464 / 96000 = 0.734000
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 12 12
+Training boundary...
+[2022-06-16 16:14:10,815][INFO] Loading latent codes.
+[2022-06-16 16:14:10,946][INFO] Loading attribute scores.
+[2022-06-16 16:14:10,958][INFO] Filtering training data.
+[2022-06-16 16:14:10,958][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:11,097][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:11,106][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:11,108][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:11,109][INFO]   Remaining: 42105 positive, 53895 negative.
+[2022-06-16 16:14:11,109][INFO] Training boundary.
+[2022-06-16 16:14:11,950][INFO] Finish training.
+[2022-06-16 16:14:11,986][INFO] Accuracy for validation set: 1178 / 1200 = 0.981667
+[2022-06-16 16:14:14,334][INFO] Accuracy for remaining set: 72689 / 96000 = 0.757177
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 13 13
+Training boundary...
+[2022-06-16 16:14:19,690][INFO] Loading latent codes.
+[2022-06-16 16:14:19,801][INFO] Loading attribute scores.
+[2022-06-16 16:14:19,814][INFO] Filtering training data.
+[2022-06-16 16:14:19,814][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:19,950][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:19,958][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:19,960][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:19,961][INFO]   Remaining: 6635 positive, 89365 negative.
+[2022-06-16 16:14:19,961][INFO] Training boundary.
+[2022-06-16 16:14:20,695][INFO] Finish training.
+[2022-06-16 16:14:20,711][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:14:21,682][INFO] Accuracy for remaining set: 58967 / 96000 = 0.614240
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 14 14
+Training boundary...
+[2022-06-16 16:14:28,184][INFO] Loading latent codes.
+[2022-06-16 16:14:28,300][INFO] Loading attribute scores.
+[2022-06-16 16:14:28,312][INFO] Filtering training data.
+[2022-06-16 16:14:28,312][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:28,451][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:28,459][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:28,461][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:28,462][INFO]   Remaining: 7401 positive, 88599 negative.
+[2022-06-16 16:14:28,462][INFO] Training boundary.
+[2022-06-16 16:14:29,209][INFO] Finish training.
+[2022-06-16 16:14:29,226][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:14:30,336][INFO] Accuracy for remaining set: 57918 / 96000 = 0.603313
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 15 15
+Training boundary...
+[2022-06-16 16:14:35,686][INFO] Loading latent codes.
+[2022-06-16 16:14:35,800][INFO] Loading attribute scores.
+[2022-06-16 16:14:35,813][INFO] Filtering training data.
+[2022-06-16 16:14:35,813][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:35,950][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:35,959][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:35,961][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:35,962][INFO]   Remaining: 30 positive, 95970 negative.
+[2022-06-16 16:14:35,962][INFO] Training boundary.
+[2022-06-16 16:14:36,701][INFO] Finish training.
+[2022-06-16 16:14:36,725][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:14:38,046][INFO] Accuracy for remaining set: 79700 / 96000 = 0.830208
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 16 16
+Training boundary...
+[2022-06-16 16:14:42,988][INFO] Loading latent codes.
+[2022-06-16 16:14:43,100][INFO] Loading attribute scores.
+[2022-06-16 16:14:43,113][INFO] Filtering training data.
+[2022-06-16 16:14:43,113][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:43,249][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:43,257][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:43,259][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:43,260][INFO]   Remaining: 8360 positive, 87640 negative.
+[2022-06-16 16:14:43,260][INFO] Training boundary.
+[2022-06-16 16:14:43,983][INFO] Finish training.
+[2022-06-16 16:14:44,003][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:14:45,141][INFO] Accuracy for remaining set: 61819 / 96000 = 0.643948
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 17 17
+Training boundary...
+[2022-06-16 16:14:49,814][INFO] Loading latent codes.
+[2022-06-16 16:14:49,938][INFO] Loading attribute scores.
+[2022-06-16 16:14:49,949][INFO] Filtering training data.
+[2022-06-16 16:14:49,949][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:50,086][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:50,095][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:50,097][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:50,099][INFO]   Remaining: 469 positive, 95531 negative.
+[2022-06-16 16:14:50,099][INFO] Training boundary.
+[2022-06-16 16:14:50,820][INFO] Finish training.
+[2022-06-16 16:14:50,838][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:14:51,881][INFO] Accuracy for remaining set: 64901 / 96000 = 0.676052
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 18 18
+Training boundary...
+[2022-06-16 16:14:57,283][INFO] Loading latent codes.
+[2022-06-16 16:14:57,397][INFO] Loading attribute scores.
+[2022-06-16 16:14:57,409][INFO] Filtering training data.
+[2022-06-16 16:14:57,409][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:14:57,545][INFO] Spliting training and validation sets:
+[2022-06-16 16:14:57,554][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:14:57,555][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:14:57,556][INFO]   Remaining: 48444 positive, 47556 negative.
+[2022-06-16 16:14:57,556][INFO] Training boundary.
+[2022-06-16 16:14:58,277][INFO] Finish training.
+[2022-06-16 16:14:58,296][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:14:59,405][INFO] Accuracy for remaining set: 80576 / 96000 = 0.839333
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 19 19
+Training boundary...
+[2022-06-16 16:15:04,360][INFO] Loading latent codes.
+[2022-06-16 16:15:04,478][INFO] Loading attribute scores.
+[2022-06-16 16:15:04,492][INFO] Filtering training data.
+[2022-06-16 16:15:04,492][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:04,628][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:04,637][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:04,639][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:04,640][INFO]   Remaining: 55182 positive, 40818 negative.
+[2022-06-16 16:15:04,640][INFO] Training boundary.
+[2022-06-16 16:15:05,484][INFO] Finish training.
+[2022-06-16 16:15:05,514][INFO] Accuracy for validation set: 1195 / 1200 = 0.995833
+[2022-06-16 16:15:07,398][INFO] Accuracy for remaining set: 75504 / 96000 = 0.786500
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 20 20  
+Training boundary...
+[2022-06-16 16:15:13,089][INFO] Loading latent codes.
+[2022-06-16 16:15:13,203][INFO] Loading attribute scores.
+[2022-06-16 16:15:13,205][INFO] Filtering training data.
+[2022-06-16 16:15:13,206][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:13,341][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:13,350][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:13,352][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:13,353][INFO]   Remaining: 34993 positive, 61007 negative.
+[2022-06-16 16:15:13,353][INFO] Training boundary.
+[2022-06-16 16:15:14,113][INFO] Finish training.
+[2022-06-16 16:15:14,137][INFO] Accuracy for validation set: 1197 / 1200 = 0.997500
+[2022-06-16 16:15:15,522][INFO] Accuracy for remaining set: 83304 / 96000 = 0.867750
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 21 21
+Training boundary...
+[2022-06-16 16:15:22,263][INFO] Loading latent codes.
+[2022-06-16 16:15:22,376][INFO] Loading attribute scores.
+[2022-06-16 16:15:22,393][INFO] Filtering training data.
+[2022-06-16 16:15:22,393][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:22,528][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:22,537][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:22,538][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:22,539][INFO]   Remaining: 63304 positive, 32696 negative.
+[2022-06-16 16:15:22,539][INFO] Training boundary.
+[2022-06-16 16:15:23,692][INFO] Finish training.
+[2022-06-16 16:15:23,764][INFO] Accuracy for validation set: 1140 / 1200 = 0.950000
+[2022-06-16 16:15:28,628][INFO] Accuracy for remaining set: 70816 / 96000 = 0.737667
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 22 22
+Training boundary...
+[2022-06-16 16:15:37,386][INFO] Loading latent codes.
+[2022-06-16 16:15:37,502][INFO] Loading attribute scores.
+[2022-06-16 16:15:37,514][INFO] Filtering training data.
+[2022-06-16 16:15:37,514][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:37,652][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:37,661][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:37,662][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:37,664][INFO]   Remaining: 4031 positive, 91969 negative.
+[2022-06-16 16:15:37,664][INFO] Training boundary.
+[2022-06-16 16:15:38,412][INFO] Finish training.
+[2022-06-16 16:15:38,430][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:15:39,556][INFO] Accuracy for remaining set: 59030 / 96000 = 0.614896
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 23 23
+Training boundary...
+[2022-06-16 16:15:43,910][INFO] Loading latent codes.
+[2022-06-16 16:15:44,020][INFO] Loading attribute scores.
+[2022-06-16 16:15:44,041][INFO] Filtering training data.
+[2022-06-16 16:15:44,042][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:44,183][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:44,192][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:44,194][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:44,195][INFO]   Remaining: 769 positive, 95231 negative.
+[2022-06-16 16:15:44,195][INFO] Training boundary.
+[2022-06-16 16:15:44,987][INFO] Finish training.
+[2022-06-16 16:15:45,016][INFO] Accuracy for validation set: 1198 / 1200 = 0.998333
+[2022-06-16 16:15:46,674][INFO] Accuracy for remaining set: 42266 / 96000 = 0.440271
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 24 24
+Training boundary...
+[2022-06-16 16:15:52,358][INFO] Loading latent codes.
+[2022-06-16 16:15:52,470][INFO] Loading attribute scores.
+[2022-06-16 16:15:52,494][INFO] Filtering training data.
+[2022-06-16 16:15:52,494][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:15:52,628][INFO] Spliting training and validation sets:
+[2022-06-16 16:15:52,637][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:15:52,639][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:15:52,640][INFO]   Remaining: 76931 positive, 19069 negative.
+[2022-06-16 16:15:52,640][INFO] Training boundary.
+[2022-06-16 16:15:53,438][INFO] Finish training.
+[2022-06-16 16:15:53,464][INFO] Accuracy for validation set: 1197 / 1200 = 0.997500
+[2022-06-16 16:15:55,002][INFO] Accuracy for remaining set: 82136 / 96000 = 0.855583
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 25 25
+Training boundary...
+[2022-06-16 16:16:09,987][INFO] Loading latent codes.
+[2022-06-16 16:16:10,101][INFO] Loading attribute scores.
+[2022-06-16 16:16:10,113][INFO] Filtering training data.
+[2022-06-16 16:16:10,113][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:10,249][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:10,258][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:10,260][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:10,261][INFO]   Remaining: 31776 positive, 64224 negative.
+[2022-06-16 16:16:10,261][INFO] Training boundary.
+[2022-06-16 16:16:11,037][INFO] Finish training.
+[2022-06-16 16:16:11,064][INFO] Accuracy for validation set: 1195 / 1200 = 0.995833
+[2022-06-16 16:16:12,670][INFO] Accuracy for remaining set: 75545 / 96000 = 0.786927
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 26 26
+Training boundary...
+[2022-06-16 16:16:20,294][INFO] Loading latent codes.
+[2022-06-16 16:16:20,407][INFO] Loading attribute scores.
+[2022-06-16 16:16:20,437][INFO] Filtering training data.
+[2022-06-16 16:16:20,437][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:20,573][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:20,582][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:20,584][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:20,585][INFO]   Remaining: 127 positive, 95873 negative.
+[2022-06-16 16:16:20,585][INFO] Training boundary.
+[2022-06-16 16:16:21,389][INFO] Finish training.
+[2022-06-16 16:16:21,419][INFO] Accuracy for validation set: 1189 / 1200 = 0.990833
+[2022-06-16 16:16:23,398][INFO] Accuracy for remaining set: 70428 / 96000 = 0.733625
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 27 27
+Training boundary...
+[2022-06-16 16:16:29,137][INFO] Loading latent codes.
+[2022-06-16 16:16:29,251][INFO] Loading attribute scores.
+[2022-06-16 16:16:29,266][INFO] Filtering training data.
+[2022-06-16 16:16:29,266][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:29,401][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:29,410][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:29,412][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:29,413][INFO]   Remaining: 19294 positive, 76706 negative.
+[2022-06-16 16:16:29,413][INFO] Training boundary.
+[2022-06-16 16:16:30,134][INFO] Finish training.
+[2022-06-16 16:16:30,153][INFO] Accuracy for validation set: 1197 / 1200 = 0.997500
+[2022-06-16 16:16:31,234][INFO] Accuracy for remaining set: 42894 / 96000 = 0.446813
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 28 28
+Training boundary...
+[2022-06-16 16:16:37,109][INFO] Loading latent codes.
+[2022-06-16 16:16:37,218][INFO] Loading attribute scores.
+[2022-06-16 16:16:37,242][INFO] Filtering training data.
+[2022-06-16 16:16:37,242][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:37,376][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:37,385][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:37,387][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:37,388][INFO]   Remaining: 4852 positive, 91148 negative.
+[2022-06-16 16:16:37,388][INFO] Training boundary.
+[2022-06-16 16:16:38,134][INFO] Finish training.
+[2022-06-16 16:16:38,156][INFO] Accuracy for validation set: 1198 / 1200 = 0.998333
+[2022-06-16 16:16:39,545][INFO] Accuracy for remaining set: 49377 / 96000 = 0.514344
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 29 29
+Training boundary...
+[2022-06-16 16:16:45,585][INFO] Loading latent codes.
+[2022-06-16 16:16:45,698][INFO] Loading attribute scores.
+[2022-06-16 16:16:45,709][INFO] Filtering training data.
+[2022-06-16 16:16:45,709][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:45,845][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:45,854][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:45,856][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:45,857][INFO]   Remaining: 5929 positive, 90071 negative.
+[2022-06-16 16:16:45,857][INFO] Training boundary.
+[2022-06-16 16:16:46,659][INFO] Finish training.
+[2022-06-16 16:16:46,686][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:16:48,305][INFO] Accuracy for remaining set: 55156 / 96000 = 0.574542
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 30 30
+Training boundary...
+[2022-06-16 16:16:53,706][INFO] Loading latent codes.
+[2022-06-16 16:16:53,818][INFO] Loading attribute scores.
+[2022-06-16 16:16:53,844][INFO] Filtering training data.
+[2022-06-16 16:16:53,844][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:16:53,980][INFO] Spliting training and validation sets:
+[2022-06-16 16:16:53,988][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:16:53,990][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:16:53,992][INFO]   Remaining: 7804 positive, 88196 negative.
+[2022-06-16 16:16:53,992][INFO] Training boundary.
+[2022-06-16 16:16:54,717][INFO] Finish training.
+[2022-06-16 16:16:54,737][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:16:55,981][INFO] Accuracy for remaining set: 59147 / 96000 = 0.616115
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 31 31
+Training boundary...
+[2022-06-16 16:17:02,211][INFO] Loading latent codes.
+[2022-06-16 16:17:02,324][INFO] Loading attribute scores.
+[2022-06-16 16:17:02,345][INFO] Filtering training data.
+[2022-06-16 16:17:02,345][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:02,479][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:02,488][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:02,490][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:02,491][INFO]   Remaining: 63251 positive, 32749 negative.
+[2022-06-16 16:17:02,491][INFO] Training boundary.
+[2022-06-16 16:17:03,339][INFO] Finish training.
+[2022-06-16 16:17:03,377][INFO] Accuracy for validation set: 1180 / 1200 = 0.983333
+[2022-06-16 16:17:05,723][INFO] Accuracy for remaining set: 79405 / 96000 = 0.827135
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 32 32
+Training boundary...
+[2022-06-16 16:17:10,366][INFO] Loading latent codes.
+[2022-06-16 16:17:10,493][INFO] Loading attribute scores.
+[2022-06-16 16:17:10,506][INFO] Filtering training data.
+[2022-06-16 16:17:10,506][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:10,644][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:10,653][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:10,655][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:10,656][INFO]   Remaining: 21140 positive, 74860 negative.
+[2022-06-16 16:17:10,656][INFO] Training boundary.
+[2022-06-16 16:17:11,423][INFO] Finish training.
+[2022-06-16 16:17:11,448][INFO] Accuracy for validation set: 1196 / 1200 = 0.996667
+[2022-06-16 16:17:13,001][INFO] Accuracy for remaining set: 61005 / 96000 = 0.635469
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 33 33
+Training boundary...
+[2022-06-16 16:17:17,507][INFO] Loading latent codes.
+[2022-06-16 16:17:17,618][INFO] Loading attribute scores.
+[2022-06-16 16:17:17,643][INFO] Filtering training data.
+[2022-06-16 16:17:17,643][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:17,779][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:17,787][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:17,789][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:17,790][INFO]   Remaining: 16392 positive, 79608 negative.
+[2022-06-16 16:17:17,790][INFO] Training boundary.
+[2022-06-16 16:17:18,598][INFO] Finish training.
+[2022-06-16 16:17:18,622][INFO] Accuracy for validation set: 1196 / 1200 = 0.996667
+[2022-06-16 16:17:20,091][INFO] Accuracy for remaining set: 75398 / 96000 = 0.785396
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 34 34
+Training boundary...
+[2022-06-16 16:17:25,290][INFO] Loading latent codes.
+[2022-06-16 16:17:25,405][INFO] Loading attribute scores.
+[2022-06-16 16:17:25,415][INFO] Filtering training data.
+[2022-06-16 16:17:25,416][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:25,551][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:25,560][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:25,562][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:25,563][INFO]   Remaining: 29032 positive, 66968 negative.
+[2022-06-16 16:17:25,564][INFO] Training boundary.
+[2022-06-16 16:17:26,313][INFO] Finish training.
+[2022-06-16 16:17:26,338][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:17:27,848][INFO] Accuracy for remaining set: 58247 / 96000 = 0.606740
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 35 35
+Training boundary...
+[2022-06-16 16:17:33,488][INFO] Loading latent codes.
+[2022-06-16 16:17:33,604][INFO] Loading attribute scores.
+[2022-06-16 16:17:33,617][INFO] Filtering training data.
+[2022-06-16 16:17:33,617][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:33,753][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:33,762][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:33,763][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:33,765][INFO]   Remaining: 0 positive, 96000 negative.
+[2022-06-16 16:17:33,765][INFO] Training boundary.
+[2022-06-16 16:17:34,524][INFO] Finish training.
+[2022-06-16 16:17:34,550][INFO] Accuracy for validation set: 1191 / 1200 = 0.992500
+[2022-06-16 16:17:36,123][INFO] Accuracy for remaining set: 54378 / 96000 = 0.566438
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 36 36
+Training boundary...
+[2022-06-16 16:17:41,415][INFO] Loading latent codes.
+[2022-06-16 16:17:41,524][INFO] Loading attribute scores.
+[2022-06-16 16:17:41,544][INFO] Filtering training data.
+[2022-06-16 16:17:41,544][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:41,679][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:41,688][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:41,690][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:41,691][INFO]   Remaining: 58287 positive, 37713 negative.
+[2022-06-16 16:17:41,691][INFO] Training boundary.
+[2022-06-16 16:17:42,418][INFO] Finish training.
+[2022-06-16 16:17:42,441][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:17:43,744][INFO] Accuracy for remaining set: 86645 / 96000 = 0.902552
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 37 37
+Training boundary...
+[2022-06-16 16:17:50,888][INFO] Loading latent codes.
+[2022-06-16 16:17:51,000][INFO] Loading attribute scores.
+[2022-06-16 16:17:51,011][INFO] Filtering training data.
+[2022-06-16 16:17:51,012][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:51,150][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:51,159][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:51,161][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:51,162][INFO]   Remaining: 1575 positive, 94425 negative.
+[2022-06-16 16:17:51,162][INFO] Training boundary.
+[2022-06-16 16:17:51,938][INFO] Finish training.
+[2022-06-16 16:17:51,967][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:17:53,702][INFO] Accuracy for remaining set: 29644 / 96000 = 0.308792
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 38 38
+Training boundary...
+[2022-06-16 16:17:58,389][INFO] Loading latent codes.
+[2022-06-16 16:17:58,502][INFO] Loading attribute scores.
+[2022-06-16 16:17:58,514][INFO] Filtering training data.
+[2022-06-16 16:17:58,514][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:17:58,650][INFO] Spliting training and validation sets:
+[2022-06-16 16:17:58,659][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:17:58,661][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:17:58,662][INFO]   Remaining: 223 positive, 95777 negative.
+[2022-06-16 16:17:58,662][INFO] Training boundary.
+[2022-06-16 16:17:59,389][INFO] Finish training.
+[2022-06-16 16:17:59,407][INFO] Accuracy for validation set: 1199 / 1200 = 0.999167
+[2022-06-16 16:18:00,562][INFO] Accuracy for remaining set: 53251 / 96000 = 0.554698
+(py370) ➜  IMA206_Project_Git git:(peilin) sh run_interfacegan.sh w 39 39
+Training boundary...
+[2022-06-16 16:18:05,463][INFO] Loading latent codes.
+[2022-06-16 16:18:05,575][INFO] Loading attribute scores.
+[2022-06-16 16:18:05,596][INFO] Filtering training data.
+[2022-06-16 16:18:05,596][INFO] Sorting scores to get positive and negative samples.
+[2022-06-16 16:18:05,732][INFO] Spliting training and validation sets:
+[2022-06-16 16:18:05,741][INFO]   Training: 1400 positive, 1400 negative.
+[2022-06-16 16:18:05,743][INFO]   Validation: 600 positive, 600 negative.
+[2022-06-16 16:18:05,744][INFO]   Remaining: 78272 positive, 17728 negative.
+[2022-06-16 16:18:05,744][INFO] Training boundary.
+[2022-06-16 16:18:06,444][INFO] Finish training.
+[2022-06-16 16:18:06,461][INFO] Accuracy for validation set: 1200 / 1200 = 1.000000
+[2022-06-16 16:18:07,479][INFO] Accuracy for remaining set: 73237 / 96000 = 0.762885
