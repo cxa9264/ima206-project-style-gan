@@ -29,7 +29,15 @@ Well.... it use the tf version StyleGan based on tf 1.10.0.....
 
 3. Train the SVM
 ```
-run interfacegan.sh {latent_space_type} {}
+sh run_interfacegan.sh {latent_space_type} {attribute index} {atribute name}
+```
+
+Example
+```
+sh run_interfacegan.sh w 20 Male
+```
+```
+sh run_interfacegan.sh w 14 Double_Chin
 ```
 
 ## CNN Classifier
