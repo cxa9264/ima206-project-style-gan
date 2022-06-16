@@ -30,12 +30,18 @@ if __name__ == '__main__':
                             help='If specified, will skip generating images in '
                            'Style GAN. (default: generate images)')
     parser.add_argument('--intercept', dest='intercept_path', type=str, default=None)
+    parser.add_argument('-mb', '--manipulate_boundary', nargs='+', type=str, default=None)
 
     args = parser.parse_args()
 
     boundary = np.load(args.boundary_path)
     if args.intercept_path is not None:
         intercept = np.load(args.intercept_path)
+    
+    other_boundaries = []
+    if args.manipulate_boundary is not None:
+        for path in args.manipulate_boundary:
+            other_boundaries.append(np.load(path))
 
     logger = setup_logger(args.save_path, logger_name='generate_data')
 
