@@ -31,31 +31,71 @@ if __name__ == '__main__':
                            'Style GAN. (default: generate images)')
     parser.add_argument('--intercept', dest='intercept_path', type=str, default=None)
     parser.add_argument('-mb', '--manipulate_boundary', nargs='+', type=str, default=None)
+    parser.add_argument('--save_code', type=str, default=None)
+    parser.add_argument('--load_code', type=str, default=None)
 
     args = parser.parse_args()
 
-    boundary = np.load(args.boundary_path)
+    boundary_ori = np.load(args.boundary_path)
     if args.intercept_path is not None:
         intercept = np.load(args.intercept_path)
     
-    other_boundaries = []
+    # conditinal manipulation
+    boundary = boundary_ori.copy()
     if args.manipulate_boundary is not None:
-        for path in args.manipulate_boundary:
-            other_boundaries.append(np.load(path))
+        if len(args.manipulate_boundary) == 1:
+            second_boundary = np.load(args.manipulate_boundary[0])
+            boundary = boundary - (boundary @ second_boundary.T) * second_boundary
+            boundary /= np.linalg.norm(boundary)
+        else:
+            conditional_boundary = []
+            for path in args.manipulate_boundary:
+                conditional_boundary.append(np.load(path))
+            conditional_boundary = np.concatenate(conditional_boundary)
+            A = conditional_boundary @ conditional_boundary.T
+            B = conditional_boundary @ boundary.T
+            x = np.linalg.solve(A, B)
+            boundary = boundary - x.T @ conditional_boundary
+            boundary /= np.linalg.norm(boundary)
+        
+            print("After manipulation:")
+            for b in conditional_boundary:
+                print(boundary @ b.T)
 
     logger = setup_logger(args.save_path, logger_name='generate_data')
 
     # init model
     model = StyleGANGenerator('stylegan_celebahq', logger)
     assert args.latent_space_type in ['w', 'W', 'z', 'Z'], 'wrong latent space type'
-    kwargs = {'latent_space_type': args.latent_space_type}
+    kwargs = {'latent_space_type': 'z'}
 
     # generate latent codes
     logger.info('Preparing latent codes...')
     initial_code = model.easy_sample(1, **kwargs)
-    initial_code = initial_code - (initial_code @ boundary.T + intercept[0, 0]) * boundary 
+
+    if args.latent_space_type in ['w', 'W']:
+        if torch.cuda.is_available():
+            device = torch.device('cuda:0')
+        else:
+            raise AssertionError('No GPU available')
+
+        with torch.no_grad():
+            initial_code = model.model.mapping(torch.tensor(initial_code).to(device)).cpu().numpy()
+    
+    if args.save_code is not None:
+        np.save(args.save_code, initial_code)
+    
+    if args.load_code is not None:
+        initial_code = np.load(args.load_code)
+
+    initial_code = initial_code - (initial_code @ boundary_ori.T + intercept[0, 0]) * boundary_ori
     step = np.linspace(0, args.max_delta, args.num_steps)[1:]
     step = np.concatenate([step, -step, [0]])
+
+    if args.manipulate_boundary is not None:
+        step = step / (boundary_ori @ boundary.T)
+        step = step.flatten()
+
     step.sort()
     latent_codes = initial_code + step.reshape(-1, 1) * boundary
 
