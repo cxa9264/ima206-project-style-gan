@@ -12,4 +12,4 @@ python train_boundary.py \
     -o "$OUTPUT"/stylegan_celebahq_"$1"_"$ATTRIBUTE_NAME" \
     -c "$INPUT_CODE" \
     -s "$INPUT_SCORE" \
-    -n 0.1
+    -n 0.02
