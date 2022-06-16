@@ -128,12 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-<<<<<<< HEAD
-# Images
-*.jpg
-=======
 *.pkl
 *.pth
 *.jpg
 *.png
->>>>>>> tianyu
