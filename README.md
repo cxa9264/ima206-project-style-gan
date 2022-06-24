@@ -7,14 +7,19 @@ Based on Pytorch implemented InterFaceGan.
 
 Well.... it use the tf version StyleGan based on tf 1.10.0.....
 
-Manipulate attribute:
+* Manipulate attribute:
 ```
 sh run_move.sh {latent_space_type} {attribute index}
 ```
 Data is by default generated in ```./result/``` and the score is saved at ```./move_result```.
 
+* Pretrained boundaries
 
-3. Train the SVM
+Available at https://drive.google.com/file/d/1VENvrpsggwp0KLUUVHFObCTTXxBMMk1U/view?usp=sharing.
+Put in ```./interfacegan/boundary```
+
+
+* Train the SVM
 ```
 sh run_interfacegan.sh {latent_space_type} {attribute index} {atribute name}
 ```
