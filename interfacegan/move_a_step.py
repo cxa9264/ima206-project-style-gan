@@ -33,6 +33,8 @@ if __name__ == '__main__':
     parser.add_argument('-mb', '--manipulate_boundary', nargs='+', type=str, default=None)
     parser.add_argument('--save_code', type=str, default=None)
     parser.add_argument('--load_code', type=str, default=None)
+    parser.add_argument('--save_w_code', type=str, default=None)
+    parser.add_argument('--on_bound', action='store_true')
 
     args = parser.parse_args()
 
@@ -58,9 +60,9 @@ if __name__ == '__main__':
             boundary = boundary - x.T @ conditional_boundary
             boundary /= np.linalg.norm(boundary)
         
-            print("After manipulation:")
             for b in conditional_boundary:
-                print(boundary @ b.T)
+                print(f"Before: {boundary_ori @ b.T} After: {boundary @ b.T}")
+
 
     logger = setup_logger(args.save_path, logger_name='generate_data')
 
@@ -74,6 +76,7 @@ if __name__ == '__main__':
     initial_code = model.easy_sample(1, **kwargs)
 
     if args.latent_space_type in ['w', 'W']:
+        print("Latent Space W")
         if torch.cuda.is_available():
             device = torch.device('cuda:0')
         else:
@@ -82,13 +85,30 @@ if __name__ == '__main__':
         with torch.no_grad():
             initial_code = model.model.mapping(torch.tensor(initial_code).to(device)).cpu().numpy()
     
-    if args.save_code is not None:
-        np.save(args.save_code, initial_code)
-    
     if args.load_code is not None:
         initial_code = np.load(args.load_code)
 
-    initial_code = initial_code - (initial_code @ boundary_ori.T + intercept[0, 0]) * boundary_ori
+    if args.save_code is not None:
+        np.save(args.save_code, initial_code)
+
+    if args.latent_space_type in ['z', 'Z'] or args.load_code is None:
+        initial_code = initial_code - (initial_code @ boundary_ori.T + intercept[0, 0]) * boundary_ori
+    
+    if args.on_bound:
+        boundary_new = initial_code - (initial_code @ boundary_ori.T) * boundary_ori
+        boundary_new = boundary_new / np.linalg.norm(boundary_new)
+        boundary_ori = boundary_new
+
+    if args.save_w_code is not None and args.latent_space_type in ['z', 'Z']:
+        if torch.cuda.is_available():
+            device = torch.device('cuda:0')
+        else:
+            raise AssertionError('No GPU available')
+
+        with torch.no_grad():
+            w = model.model.mapping(torch.tensor(initial_code).to(device)).cpu().numpy()
+        np.save(args.save_w_code, w)
+
     step = np.linspace(0, args.max_delta, args.num_steps)[1:]
     step = np.concatenate([step, -step, [0]])
 
@@ -104,7 +124,7 @@ if __name__ == '__main__':
     for i, latent_code in enumerate(tqdm(latent_codes)):
         outputs = model.easy_synthesize(
             latent_code[None],
-            **kwargs,
+            latent_space_type=args.latent_space_type,
             generate_style=args.generate_style,
             generate_image=args.generate_image
         )

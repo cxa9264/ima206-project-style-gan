@@ -120,4 +120,4 @@ if __name__ == '__main__':
         plt.legend(legends, loc='center left', bbox_to_anchor=(1, 0.5))
         plt.title(f"Move {cfg.selected_attrs[args.move_target]}")
 
-        plt.savefig(os.path.join(args.save_path, 'scores.png'))
+        plt.savefig(os.path.join(args.save_path, 'scores.png'), bbox_inches='tight')
