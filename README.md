@@ -5,7 +5,7 @@ Based on Pytorch implemented InterFaceGan.
 
 ## InterFace Gan
 
-Well.... it use the tf version StyleGan based on tf 1.10.0.....
+Well.... it use the tf version StyleGan based on tf 1.10.0 to convert parameters to pythorch version.....
 
 * Manipulate attribute:
 ```
